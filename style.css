@@ -10,9 +10,11 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
-
+/*
+    HEADER
+*/
 header{
-    background-image: url("img/22552545_1921988094895123229_n.jpg") ;
+    background-image: linear-gradient(to right, rgb(0, 0, 204, 0.5), rgb(204, 0, 0, 0.3)), url("img/22552545_1921988094895123229_n.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -26,12 +28,50 @@ header{
 }
 .showcase-box h1{
     font-family: 'Dokdo', cursive;
-    margin: 0;
+    margin: 0 0 20px 0;
     color: white;
     font-size: 360%; /* relative to global html font-size */
 }
 .hola{
     font-size: 200%; /* relative to local font-size above */
+}
+nav h1{
+    font-family: 'Pacifico', cursive;
+
+    margin: 0;
+    display: inline-block;
+    color: orange;
+    padding: 10px;
+}
+/*
+    SHOWCASE BUTTONS
+*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border-radius: 200px;
+    border: 1px solid #fff;
+    transition: background-color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited{
+    background-color: #341f97;
+}
+.btn-full:hover,
+.btn-full:active {
+    background-color: #2a197b;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    background-color: #cd2929;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #b12323;
 }
 #main-banner img{
     border-bottom: 6px solid red;
